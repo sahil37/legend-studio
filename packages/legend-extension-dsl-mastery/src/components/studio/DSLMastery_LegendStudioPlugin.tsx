@@ -15,7 +15,7 @@
  */
 
 import packageJson from '../../../package.json';
-import { QuestionIcon } from '@finos/legend-art';
+import { PiedPiperSquareIcon } from '@finos/legend-art';
 import type { PackageableElement } from '@finos/legend-graph';
 import {
   type DSL_LegendStudioPlugin_Extension,
@@ -63,8 +63,8 @@ export class DSLMastery_LegendStudioPlugin
       (type: string): React.ReactNode | undefined => {
         if (type === MASTERY_ELEMENT_TYPE) {
           return (
-            <div className="icon">
-              <QuestionIcon />
+            <div className="icon icon--mastery">
+              <PiedPiperSquareIcon />
             </div>
           );
         }

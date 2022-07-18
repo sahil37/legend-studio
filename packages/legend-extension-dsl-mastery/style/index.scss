@@ -14,13 +14,10 @@
  * limitations under the License.
  */
 
-@import '@finos/legend-art/lib/index.css';
-@import '@finos/legend-application/lib/index.css';
-@import '@finos/legend-studio/lib/index.css';
-@import '@finos/legend-extension-dsl-data-space/lib/index.css';
-@import '@finos/legend-extension-dsl-diagram/lib/index.css';
-@import '@finos/legend-extension-dsl-persistence/lib/index.css';
-@import '@finos/legend-extension-dsl-mastery/lib/index.css';
-@import '@finos/legend-extension-dsl-text/lib/index.css';
-@import '@finos/legend-studio-extension-query-builder/lib/index.css';
-@import '@finos/legend-extension-external-store-service/lib/index.css';
+:root {
+  --color-mastery: var(--color-blue-50);
+}
+
+.icon--mastery {
+  color: var(--color-mastery);
+}
