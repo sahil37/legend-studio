@@ -38,6 +38,10 @@ export const TEST_DATA__roundtrip = [
     path: 'org::legend::PersonMasterRecord',
     classifierPath: 'meta::pure::mastery::metamodel::MasterRecordDefinition',
     content: {
+      _type: 'mastery',
+      name: 'PersonMasterRecord',
+      package: 'org::legend',
+      modelClass: 'org::legend::Person',
       identityResolution: {
         modelClass: 'org::legend::Person',
         resolutionQueries: [
@@ -118,9 +122,6 @@ export const TEST_DATA__roundtrip = [
           },
         ],
       },
-      modelClass: 'org::legend::Person',
-      name: 'PersonMasterRecord',
-      package: 'org::legend',
     },
   },
 ];

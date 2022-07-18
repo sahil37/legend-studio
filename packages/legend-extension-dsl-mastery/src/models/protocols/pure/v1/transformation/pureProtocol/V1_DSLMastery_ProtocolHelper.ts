@@ -70,11 +70,11 @@ export const V1_masterRecordDefinitionModelSchema = (
     _type: usingConstantValueSchema(
       V1_MASTER_RECORD_DEFINITION_ELEMENT_PROTOCOL_TYPE,
     ),
-    name: primitive(),
-    package: primitive(),
-    modelClass: primitive(),
     identityResolution: custom(
       (val) => serialize(V1_identityResolutionSchema, val),
       (val) => deserialize(V1_identityResolutionSchema, val),
     ),
+    modelClass: primitive(),
+    name: primitive(),
+    package: primitive(),
   });
