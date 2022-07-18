@@ -26,6 +26,7 @@ import { DSLText_LegendStudioPlugin } from '@finos/legend-extension-dsl-text';
 import { DSLDiagram_LegendStudioPlugin } from '@finos/legend-extension-dsl-diagram';
 import { DSLDataSpace_LegendStudioPlugin } from '@finos/legend-extension-dsl-data-space';
 import { DSLPersistence_LegendStudioPlugin } from '@finos/legend-extension-dsl-persistence';
+import { DSLMastery_LegendStudioPlugin } from '@finos/legend-extension-dsl-mastery';
 import { ESService_LegendStudioPlugin } from '@finos/legend-extension-external-store-service';
 import { ELMorphir_LegendStudioPlugin } from '@finos/legend-extension-external-language-morphir';
 
@@ -40,6 +41,7 @@ export const getLegendStudioPluginCollection = (): LegendStudioPlugin[] => [
   new DSLDataSpace_LegendStudioPlugin(),
   new DSLExternalFormat_LegendStudioPlugin(),
   new DSLPersistence_LegendStudioPlugin(),
+  new DSLMastery_LegendStudioPlugin(),
   new ESService_LegendStudioPlugin(),
   new ELMorphir_LegendStudioPlugin(),
 ];
